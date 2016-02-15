@@ -14,7 +14,7 @@ class ExtremeApp extends unfiltered.filter.Plan{
 
 object ExtremeServer {
   def main(args: Array[String]) {
-    unfiltered.jetty.Server.anylocal.plan(new ExtremeApp).run()
+    unfiltered.jetty.Server.local(8081).plan(new ExtremeApp).run()
   }
 }
 
